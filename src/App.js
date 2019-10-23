@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import SiteWrapper from './components/SiteWrapper';
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+
+import HomePage from './pages/HomePage'
+
+import "tabler-react/dist/Tabler.css";
 
 function App() {
   return (
-    <div>
-      <SiteWrapper />
-    </div>
+    <React.StrictMode>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
+      </Router>
+    </React.StrictMode>
   );
 }
 
