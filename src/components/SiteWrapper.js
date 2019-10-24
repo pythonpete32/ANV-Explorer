@@ -31,7 +31,7 @@ const navBarItems = [
         value: "AGP Statistics",
         icon: "calendar",
         subItems: [
-            { value: "Sub Menu 1", to: "/maps", LinkComponent: withRouter(NavLink) },
+            { value: "AGPs", to: "/agps", LinkComponent: withRouter(NavLink) },
             { value: "Sub Menu 2", to: "/icons", LinkComponent: withRouter(NavLink) },
             { value: "Sub Menu 3", to: "/store", LinkComponent: withRouter(NavLink) },
             { value: "Sub Menu 4", to: "/blog", LinkComponent: withRouter(NavLink) },

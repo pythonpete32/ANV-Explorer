@@ -19,10 +19,7 @@ import {
     Badge,
 } from "tabler-react";
 
-import C3Chart from "react-c3js";
-
 import SiteWrapper from "../components/SiteWrapper";
-import { getDiffieHellman } from "crypto";
 import GlobalSummaryStats from "../components/GlobalSummaryStats";
 import GlobalAgpChart from "../components/GlobalAgpChart";
 import QuorumGaugeCard from "../components/QuorumGaugeCard";
