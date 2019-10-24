@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table, Text, Progress, Dropdown } from "tabler-react";
+import { Table, Text, Progress, Dropdown, Badge } from "tabler-react";
 
 function AgpTableRow() {
     return (
@@ -23,11 +23,6 @@ function AgpTableRow() {
                     <div className="float-center">
                         <strong>42%</strong>
                     </div>
-                    <div className="float-right">
-                        <Text.Small muted>
-                            42,000,000 / 100,000,000
-                                    </Text.Small>
-                    </div>
                 </div>
                 <Progress size="xs">
                     <Progress.Bar color="yellow" width={42} />
@@ -40,8 +35,10 @@ function AgpTableRow() {
             </Table.Col>
             <Table.Col alignContent="center">
                 <React.Fragment>
-                    <span className="status-icon bg-red" /> No
-                            </React.Fragment>
+                    <Badge color="danger" className="mr-1">
+                        NAY
+                    </Badge>
+                </React.Fragment>
             </Table.Col>
             <Table.Col alignContent="center">
                 <Dropdown

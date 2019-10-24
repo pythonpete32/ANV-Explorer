@@ -24,6 +24,7 @@ import GlobalSummaryStats from "../components/GlobalSummaryStats";
 import GlobalAgpChart from "../components/GlobalAgpChart";
 import QuorumGaugeCard from "../components/QuorumGaugeCard";
 import UniqueVoters from "../components/UniqueVoters";
+import SupportByTimeChart from "../components/SupportByTimeChart";
 
 
 function HomePage() {

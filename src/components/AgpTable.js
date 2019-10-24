@@ -9,7 +9,12 @@ import AgpTableRow from './AgpTableRow';
 
 function AgpTable() {
     return (
-        <Card>
+        <Card
+            isFullscreenable
+            isClosable
+            isCollapsible
+            title="With additional fullscreen button"
+        >
             <Table
                 responsive
                 highlightRowOnHover
@@ -23,15 +28,24 @@ function AgpTable() {
                         <Table.ColHeader>Vote</Table.ColHeader>
                         <Table.ColHeader>Details</Table.ColHeader>
                         <Table.ColHeader>Status</Table.ColHeader>
-                        <Table.ColHeader>Quorum</Table.ColHeader>
-                        <Table.ColHeader>Participants</Table.ColHeader>
-                        <Table.ColHeader>Passing</Table.ColHeader>
+                        <Table.ColHeader alignContent="center">Quorum</Table.ColHeader>
+                        <Table.ColHeader alignContent="center">Participants</Table.ColHeader>
+                        <Table.ColHeader alignContent="center">Passing</Table.ColHeader>
                         <Table.ColHeader alignContent="center">
                             <i className="icon-settings" />
                         </Table.ColHeader>
                     </Table.Row>
                 </Table.Header>
                 <Table.Body>
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
+                    <AgpTableRow />
                     <AgpTableRow />
                     <AgpTableRow />
                     <AgpTableRow />
