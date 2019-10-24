@@ -1,4 +1,3 @@
-// @flow
 import React, { Component } from 'react'
 import { NavLink, withRouter } from "react-router-dom";
 
@@ -85,7 +84,7 @@ export class SiteWrapper extends Component {
                 avatarURL: "demo/faces/male/41.jpg",
                 message: (
                     <React.Fragment>
-                        <strong>Nathan</strong> pushed new commit: Fix page load performance
+                        <strong>ANV 4</strong> Finished: Results are in!
                         issue.
                     </React.Fragment>
                 ),
@@ -96,7 +95,7 @@ export class SiteWrapper extends Component {
                 avatarURL: "demo/faces/female/1.jpg",
                 message: (
                     <React.Fragment>
-                        <strong>Alice</strong> started new task: Tabler UI design.
+                        <strong>AGP 33</strong> Vote Flipped: Vote flipped from Yay to Nay
                     </React.Fragment>
                 ),
                 time: "1 hour ago",
@@ -106,10 +105,20 @@ export class SiteWrapper extends Component {
                 avatarURL: "demo/faces/female/18.jpg",
                 message: (
                     <React.Fragment>
-                        <strong>Rose</strong> deployed new version of NodeJS REST Api // V3
+                        <strong>AGP 21</strong>  Vote Flipped: Vote flipped from Nay to Yay
                     </React.Fragment>
                 ),
                 time: "2 hours ago",
+            },
+            {
+                unread: false,
+                avatarURL: "demo/faces/female/18.jpg",
+                message: (
+                    <React.Fragment>
+                        <strong>ANV 4</strong> Started: 8 new ballots to vote on
+                    </React.Fragment>
+                ),
+                time: "3 days ago",
             },
         ],
     };
@@ -137,7 +146,7 @@ export class SiteWrapper extends Component {
                                 RootComponent="a"
                                 color="primary"
                             >
-                                Source code
+                                Open DAO
                             </Button>
                         </Nav.Item>
                     ),

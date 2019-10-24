@@ -23,49 +23,29 @@ import C3Chart from "react-c3js";
 
 import SiteWrapper from "../components/SiteWrapper";
 import { getDiffieHellman } from "crypto";
+import GlobalSummaryStats from "../components/GlobalSummaryStats";
+import GlobalAgpChart from "../components/GlobalAgpChart";
+import QuorumGaugeCard from "../components/QuorumGaugeCard";
+import UniqueVoters from "../components/UniqueVoters";
 
 
 function HomePage() {
     return (
         <SiteWrapper>
             <Page.Content>
-                <Grid.Row cards={true}>
-                    <Grid.Col width={6} sm={4} lg={2}>
-                        <StatsCard layout={1} movement={6} total="43" label="Total AGPs" />
-                    </ Grid.Col>
-                    <Grid.Col lg={6}>
-                        <Card>
-                            <Card.Header>
-                                SOME CHART
-                            </Card.Header>
-                            <C3Chart
-                                style={{ height: "12rem" }}
-                                data={{
-                                    columns: [
-                                        // each columns data
-                                        ["data1", 63],
-                                        ["data2", 37],
-                                    ],
-                                    type: "donut", // default type of chart
-                                    colors: {
-                                        data1: colors["green"],
-                                        data2: colors["green-light"],
-                                    },
-                                    names: {
-                                        // name of each serie
-                                        data1: "Maximum",
-                                        data2: "Minimum",
-                                    },
-                                }}
-                                legend={{
-                                    show: false, //hide legend
-                                }}
-                                padding={{
-                                    bottom: 0,
-                                    top: 0,
-                                }}
-                            />
-                        </Card>
+                <GlobalSummaryStats />
+                <GlobalAgpChart />=
+                <Grid.Row>
+                    <Grid.Col lg={8}>
+                        <UniqueVoters />
+                    </Grid.Col>
+                    <Grid.Col lg={4}>
+                        {<Alert type="primary">
+                            Some Global Metric Stuff
+                        </Alert>}
+                        <QuorumGaugeCard quorum={18} />
+                        <QuorumGaugeCard quorum={38} />
+                        <QuorumGaugeCard quorum={68} />
                     </Grid.Col>
                 </Grid.Row>
             </Page.Content>
