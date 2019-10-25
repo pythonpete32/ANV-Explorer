@@ -4,7 +4,6 @@ import { Page, Grid, Card, colors } from "tabler-react";
 
 
 import C3Chart from "react-c3js";
-import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from 'constants';
 
 const sumSupport = (arr) => {
     var sum = 0
@@ -208,7 +207,7 @@ const chart = {
             yesVotes,
             noVotes,
         ],
-        type: "area-step", // default type of chart
+        type: "step", // default type of chart
         colors: {
             data1: colors["green"],
             data2: colors["red"],
@@ -232,21 +231,17 @@ console.log("yesVotes: ", yesVotes)
 
 function SupportByTimeChart() {
     return (
-        <Grid.Row>
-            <Grid.Col md={12} xl={14}>
-                <C3Chart
-                    data={chart.data}
-                    axis={chart.axis}
-                    legend={{
-                        show: false, //hide legend
-                    }}
-                    padding={{
-                        bottom: 0,
-                        top: 0,
-                    }}
-                />
-            </Grid.Col>
-        </Grid.Row>
+        <C3Chart
+            data={chart.data}
+            axis={chart.axis}
+            legend={{
+                show: false, //hide legend
+            }}
+            padding={{
+                bottom: 0,
+                top: 0,
+            }}
+        />
     )
 }
 

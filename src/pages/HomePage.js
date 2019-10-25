@@ -25,6 +25,7 @@ import GlobalAgpChart from "../components/GlobalAgpChart";
 import QuorumGaugeCard from "../components/QuorumGaugeCard";
 import UniqueVoters from "../components/UniqueVoters";
 import SupportByTimeChart from "../components/SupportByTimeChart";
+import VoterWeightPieChart from "../components/VoterWeightPieChart";
 
 
 function HomePage() {
