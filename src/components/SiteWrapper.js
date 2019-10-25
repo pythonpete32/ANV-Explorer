@@ -20,49 +20,34 @@ const navBarItems = [
     },
     {
         value: "Global Statistics",
-        icon: "box",
-        subItems: [
-            { value: "Sub Menu 1", to: "/cards", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 2", to: "/charts", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 3", to: "/pricing-cards", LinkComponent: withRouter(NavLink) },
-        ],
+        to: "/globalstats",
+        icon: "globe",
+        LinkComponent: withRouter(NavLink),
+        useExact: true,
     },
     {
         value: "AGP Statistics",
-        icon: "calendar",
-        subItems: [
-            { value: "AGPs", to: "/agps", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 2", to: "/icons", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 3", to: "/store", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 4", to: "/blog", LinkComponent: withRouter(NavLink) },
-        ],
+        to: "/agps",
+        icon: "check-square",
+        LinkComponent: withRouter(NavLink),
+        useExact: true,
     },
     {
         value: "Voter Statistics",
-        icon: "file",
-        subItems: [
-            { value: "Sub Menu 1", to: "/profile", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 2", to: "/login", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 3", to: "/register", LinkComponent: withRouter(NavLink), },
-            { value: "FSub Menu 4", to: "/forgot-password", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 5", to: "/400", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 6", to: "/401", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 7", to: "/403", LinkComponent: withRouter(NavLink) },
-            { value: "Sub Menu 8", to: "/404", LinkComponent: withRouter(NavLink) },
-        ],
+        icon: "user",
+        to: "/voterstats",
+        LinkComponent: withRouter(NavLink),
+        useExact: true,
     },
     {
-        icon: "file-text",
-        value: "Documentation",
-        to:
-            process.env.NODE_ENV === "production"
-                ? "https://tabler.github.io/tabler-react/documentation"
-                : "/documentation",
+        icon: "github",
+        value: "Github",
+        to: "https://github.com/pythonpete32/ANV-Explorer",
     },
 ];
 
 const accountDropdownProps = {
-    avatarURL: "./demo/faces/female/25.jpg",
+    avatarURL: "./demo/faces/25.jpg",
     name: "Python Pete",
     description: "0x75B98........3161D",
     options: [
@@ -135,7 +120,7 @@ export class SiteWrapper extends Component {
                 headerProps={{
                     href: "/",
                     alt: "ANV DashBoard",
-                    imageURL: '../images/brand/tabler.svg',
+                    imageURL: "https://i.ibb.co/BqHzZXg/ANV-Explorer.png",
                     navItems: (
                         <Nav.Item type="div" className="d-none d-md-flex">
                             <Button
@@ -188,7 +173,7 @@ export class SiteWrapper extends Component {
                         <a href="#">Eigth Link</a>,
                     ],
                     note:
-                        "Open Source dashboard For analyzing your Aragon Voting App",
+                        "Open Source dashboard For analyzing ANV metrics",
                     copyright: (
                         <React.Fragment>
                             Copyright © 2019

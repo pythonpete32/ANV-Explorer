@@ -3,7 +3,7 @@ import React from 'react'
 import {
     Avatar,
     Icon,
-    Grid,
+    Progress,
     Card,
     Table,
     colors,
@@ -17,7 +17,7 @@ function UniqueVoters() {
     return (
         <Card>
             <Card.Header>
-                <Card.Title>Development Activity</Card.Title>
+                <Card.Title>Largest Active Token Holders</Card.Title>
             </Card.Header>
             <C3Chart
                 style={{ height: "10rem" }}
@@ -85,9 +85,9 @@ function UniqueVoters() {
             >
                 <Table.Header>
                     <Table.Row>
-                        <Table.ColHeader colSpan={2}>User</Table.ColHeader>
-                        <Table.ColHeader>Commit</Table.ColHeader>
-                        <Table.ColHeader>Date</Table.ColHeader>
+                        <Table.ColHeader colSpan={2}>TokenHolder</Table.ColHeader>
+                        <Table.ColHeader>Voting Weight</Table.ColHeader>
+                        <Table.ColHeader>Change this Quarter</Table.ColHeader>
                         <Table.ColHeader />
                     </Table.Row>
                 </Table.Header>
@@ -96,125 +96,142 @@ function UniqueVoters() {
                         <Table.Col className="w-1">
                             <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                        <Table.Col>Ronald Bradley</Table.Col>
-                        <Table.Col>Initial commit</Table.Col>
-                        <Table.Col className="text-nowrap">May 6, 2018</Table.Col>
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>100,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="green" width={12} />
+                            </Progress>
+                        </Table.Col>
                         <Table.Col className="w-1">
-                            <Icon link={true} name="trash" />
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
                     </Table.Row>
                     <Table.Row>
-                        <Table.Col>
-                            <Avatar>BM</Avatar>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                        <Table.Col>Russell Gibson</Table.Col>
-                        <Table.Col>Main structure</Table.Col>
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>90,000,00 ANT</Table.Col>
                         <Table.Col className="text-nowrap">
-                            April 22, 2018
-                    </Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                            <Progress size="s">
+                                <Progress.Bar color="green" width={2} />
+                            </Progress>
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/1.jpg" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
-                        <Table.Col>Beverly Armstrong</Table.Col>
-                        <Table.Col>Left sidebar adjustments</Table.Col>
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
+                        </Table.Col>
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>85,000,00 ANT</Table.Col>
                         <Table.Col className="text-nowrap">
-                            April 15, 2018
-                    </Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                            <Progress size="s">
+                                <Progress.Bar color="red" width={5} />
+                            </Progress>
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/male/4.jpg" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
-                        <Table.Col>Bobby Knight</Table.Col>
-                        <Table.Col>Topbar dropdown style</Table.Col>
-                        <Table.Col className="text-nowrap">April 8, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>77,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="red" width={23} />
+                            </Progress>
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>71,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="green" width={3} />
+                            </Progress>
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>66,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="green" width={40} />
+                            </Progress>
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>52,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="red" width={12} />
+                            </Progress>
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
                         </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col>
-                            <Avatar imageURL="./demo/faces/female/11.jpg" />
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>46,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="green" width={8} />
+                            </Progress>
                         </Table.Col>
-                        <Table.Col>Sharon Wells</Table.Col>
-                        <Table.Col>Fixes #625</Table.Col>
-                        <Table.Col className="text-nowrap">April 9, 2018</Table.Col>
-                        <Table.Col>
-                            <Icon link={true} name="trash" />
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
+                        </Table.Col>
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
+                        </Table.Col>
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>41,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="green" width={22} />
+                            </Progress>
+                        </Table.Col>
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
+                        </Table.Col>
+                    </Table.Row>                    <Table.Row>
+                        <Table.Col className="w-1">
+                            <Avatar imageURL="./demo/faces/male/9.jpg" />
+                        </Table.Col>
+                        <Table.Col>0x5605...8152</Table.Col>
+                        <Table.Col>40,000,00 ANT</Table.Col>
+                        <Table.Col className="text-nowrap">
+                            <Progress size="s">
+                                <Progress.Bar color="red" width={1} />
+                            </Progress>
+                        </Table.Col>
+                        <Table.Col className="w-1">
+                            <Icon link={true} name="more-vertical" />
                         </Table.Col>
                     </Table.Row>
                 </Table.Body>

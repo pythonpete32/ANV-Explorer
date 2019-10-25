@@ -1,31 +1,12 @@
 import React from "react";
 
-import {
-    Page,
-    Avatar,
-    Icon,
-    Grid,
-    Card,
-    Text,
-    Table,
-    Alert,
-    Progress,
-    colors,
-    Dropdown,
-    Button,
-    StampCard,
-    StatsCard,
-    ProgressCard,
-    Badge,
-} from "tabler-react";
+import { Page, Grid, Alert } from "tabler-react";
 
 import SiteWrapper from "../components/SiteWrapper";
 import GlobalSummaryStats from "../components/GlobalSummaryStats";
 import GlobalAgpChart from "../components/GlobalAgpChart";
 import QuorumGaugeCard from "../components/QuorumGaugeCard";
 import UniqueVoters from "../components/UniqueVoters";
-import SupportByTimeChart from "../components/SupportByTimeChart";
-import VoterWeightPieChart from "../components/VoterWeightPieChart";
 
 
 function HomePage() {

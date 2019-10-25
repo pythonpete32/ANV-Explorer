@@ -5,13 +5,31 @@ import { Page, Grid, Card, colors } from "tabler-react";
 
 import C3Chart from "react-c3js";
 
+const yay = () => {
+    const val = []
+    val.push("data1")
+    for (let i = 0; i < 30; i++) {
+        val.push(Math.random() * (3000000 - 1000000) + 1000000)
+    }
+    return val
+}
+
+const nay = () => {
+    const val = []
+    val.push("data2")
+    for (let i = 0; i < 30; i++) {
+        val.push(Math.random() * (2700000 - 750000) + 750000)
+    }
+    return val
+}
+
 const chart = {
     title: "AGP Results",
     data: {
         columns: [
             // each columns data
-            ["data1", 11, 8, 15, 18, 19, 17],
-            ["data2", 7, 7, 5, 7, 9, 12],
+            yay(),
+            nay(),
         ],
         type: "bar", // default type of chart
         colors: {
