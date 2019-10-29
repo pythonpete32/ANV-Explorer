@@ -1,4 +1,5 @@
 import React from 'react'
+import { EthIdenticon } from '@aragon/ui'
 
 import {
     Avatar,
@@ -94,7 +95,10 @@ function UniqueVoters() {
                 <Table.Body>
                     <Table.Row>
                         <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
+                            <EthIdenticon address="0xcafE1A77e84698c83CA8931F54A755176eF75f2C"
+                                scale={1.5}
+                                radius={50}
+                                soften={0.4} />
                         </Table.Col>
                         <Table.Col>0x5605...8152</Table.Col>
                         <Table.Col>100,000,00 ANT</Table.Col>

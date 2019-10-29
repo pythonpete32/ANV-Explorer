@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aragon Observatory
 
-## Available Scripts
+> What gets measured gets managed.
+> -- _Peter Drucker_
 
-In the project directory, you can run:
+## TODO
+- UI
+  **Home Screen**
+    - [x] change `Largest Active Token Holders` -> `Open Votes`
+    - [ ] make `AGP Results` multi select card with
+      - [ ] num of unique addresses
+      - [ ] participation rate (stake)
+      - [ ] Yes/No result
 
-### `npm start`
+  **AGP View**
+    - [ ] overall support
+    - [ ] support by time
+    - [ ]
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  **ANT View**
+    - [ ] price chart
+    - [ ] liquidity
+    - [ ] 
+  **Voter View**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  **Profile View**
 
-### `npm test`
+## Data Sources
+[*The Graph*](https://thegraph.com/)
+[*Messari*](https://messari.io/api)
+[*Etherscan*](https://etherscan.io/apis#tokens)
+[Cryptocompare](https://min-api.cryptocompare.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Metric Ideas
+- ANT
+  - [ ] price
+  - [ ] market liquidity
+  - [ ] trading volume
+  - [ ] ANT hodl waves
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Voting
+  - Global
+    - [ ] distribution w Nakamoto coefficient
+    - [ ] Active Token Addresses
+    - [ ] Quorum
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  - AGP
+    - [ ] overall support
+    - [ ] support by time
+    - [ ] 
+  
+  - Token Holders
+    - [ ] Token Holdings
+      - [ ] scalar
+      - [ ] over time
+    - [ ] whale rank (where they rank in active voter set)
+      - [ ] scalar
+      - [ ] over time
+    - [ ] AGPs voted on
+      - [ ] % of total voting weight in AGP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+in day to day life when some people have alot of enthusiams, introverts find it difficult to interact. being on line and being async helps but still some people can still find it challenging. that being being said im not saying its a problem and i havnt seen any specific examples of it but im not looking out for them
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+i suppose i need to think how i comminicate more than you. i find it difficult being challenged especially by some people. That situation with gus on the CRDAO thread for example. I know i can be combatative so  im trying to take my time and think carefully how i respond to in those situations

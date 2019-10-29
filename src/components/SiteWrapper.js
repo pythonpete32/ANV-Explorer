@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink, withRouter } from "react-router-dom";
 
+import { EthIdenticon } from '@aragon/ui'
 import {
     Site,
     Nav,
@@ -19,15 +20,8 @@ const navBarItems = [
         useExact: true,
     },
     {
-        value: "Global Statistics",
-        to: "/globalstats",
-        icon: "globe",
-        LinkComponent: withRouter(NavLink),
-        useExact: true,
-    },
-    {
         value: "AGP Statistics",
-        to: "/agps",
+        to: "/AGPs",
         icon: "check-square",
         LinkComponent: withRouter(NavLink),
         useExact: true,
@@ -35,7 +29,14 @@ const navBarItems = [
     {
         value: "Voter Statistics",
         icon: "user",
-        to: "/voterstats",
+        to: "/Voters",
+        LinkComponent: withRouter(NavLink),
+        useExact: true,
+    },
+    {
+        value: "ANT Statictics",
+        to: "/ANTstats",
+        icon: "fas fa-coins",
         LinkComponent: withRouter(NavLink),
         useExact: true,
     },
