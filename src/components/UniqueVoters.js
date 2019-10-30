@@ -11,6 +11,7 @@ import {
 } from "tabler-react";
 
 import C3Chart from "react-c3js";
+import UniqueVoterRow from './UniqueVoterRow';
 
 const columns = [["data1", 32, 34, 30, 27, 35, 40, 48, 30, 46, 44, 30, 43, 55, 68, 29, 17, 16, 19, 19, 18, 12, 13, 14]]
 
@@ -93,151 +94,15 @@ function UniqueVoters() {
                     </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <EthIdenticon address="0xcafE1A77e84698c83CA8931F54A755176eF75f2C"
-                                scale={1.5}
-                                radius={50}
-                                soften={0.4} />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>100,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="green" width={12} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>
-                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>90,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="green" width={2} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>85,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="red" width={5} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>77,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="red" width={23} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>71,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="green" width={3} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>66,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="green" width={40} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>52,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="red" width={12} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>46,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="green" width={8} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>41,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="green" width={22} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>                    <Table.Row>
-                        <Table.Col className="w-1">
-                            <Avatar imageURL="./demo/faces/male/9.jpg" />
-                        </Table.Col>
-                        <Table.Col>0x5605...8152</Table.Col>
-                        <Table.Col>40,000,00 ANT</Table.Col>
-                        <Table.Col className="text-nowrap">
-                            <Progress size="s">
-                                <Progress.Bar color="red" width={1} />
-                            </Progress>
-                        </Table.Col>
-                        <Table.Col className="w-1">
-                            <Icon link={true} name="more-vertical" />
-                        </Table.Col>
-                    </Table.Row>
+                    <UniqueVoterRow
+                        address={`0xcafe1a77e84698c83Ca8931f54a755176ef75f2c`}
+                        ant={"100,000,00"}
+                        stake={-10}
+                    />
+                    <UniqueVoterRow />
+                    <UniqueVoterRow />
+                    <UniqueVoterRow />
+                    <UniqueVoterRow />
                 </Table.Body>
             </Table>
         </Card>

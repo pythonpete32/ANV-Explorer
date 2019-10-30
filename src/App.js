@@ -13,15 +13,15 @@ import VoterPage from './pages/VoterPage';
 function App() {
   return (
     <Main>
-      <React.StrictMode>
-        <Router>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/agps" component={AgpPage} />
-            <Route exact path="/voters" component={VoterPage} />
-          </Switch>
-        </Router>
-      </React.StrictMode>
+
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/agps" component={AgpPage} />
+          <Route exact path="/voters" component={VoterPage} />
+        </Switch>
+      </Router>
+
     </Main>
   );
 }
