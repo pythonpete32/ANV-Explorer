@@ -12,8 +12,8 @@ function GlobalSummaryStats() {
                 <StatsCard
                     layout={2}
                     movement={5}
-                    total="423"
-                    label="Users online"
+                    total="42"
+                    label="Unique Voters"
                     chart={
                         <C3Chart
                             style={{ height: "100%" }}
@@ -24,9 +24,9 @@ function GlobalSummaryStats() {
                             }}
                             data={{
                                 names: {
-                                    data1: "Users online",
+                                    data1: "Unique Voters",
                                 },
-                                columns: [["data1", 30, 40, 10, 40, 12, 22, 40]],
+                                columns: [["data1", 30, 20, 15, 20, 22, 33, 42]],
                                 type: "area",
                             }}
                             legend={{
@@ -74,8 +74,8 @@ function GlobalSummaryStats() {
                 <StatsCard
                     layout={2}
                     movement={-3}
-                    total="423"
-                    label="Users online"
+                    total="2765700"
+                    label="ANT Used in Voting"
                     chart={
                         <C3Chart
                             style={{ height: "100%" }}
@@ -86,9 +86,9 @@ function GlobalSummaryStats() {
                             }}
                             data={{
                                 names: {
-                                    data1: "Users online",
+                                    data1: "ANT Used in Voting",
                                 },
-                                columns: [["data1", 30, 40, 10, 40, 12, 22, 40]],
+                                columns: [["data1", 24000000, 20030700, 14030700, 16030700, 21065700, 37657500, 31657000]],
                                 type: "area",
                             }}
                             legend={{
@@ -136,8 +136,8 @@ function GlobalSummaryStats() {
                 <StatsCard
                     layout={2}
                     movement={-3}
-                    total="423"
-                    label="Users online"
+                    total="6"
+                    label="Unique Delegates"
                     chart={
                         <C3Chart
                             style={{ height: "100%" }}
@@ -148,9 +148,9 @@ function GlobalSummaryStats() {
                             }}
                             data={{
                                 names: {
-                                    data1: "Users online",
+                                    data1: "Unique Delegates",
                                 },
-                                columns: [["data1", 30, 40, 10, 40, 12, 22, 40]],
+                                columns: [["data1", 0, 0, 0, 0, 2, 3, 6]],
                                 type: "area",
                             }}
                             legend={{
@@ -198,8 +198,8 @@ function GlobalSummaryStats() {
                 <StatsCard
                     layout={2}
                     movement={9}
-                    total="423"
-                    label="Users online"
+                    total="20657000"
+                    label="Delegated ANT"
                     chart={
                         <C3Chart
                             style={{ height: "100%" }}
@@ -210,9 +210,9 @@ function GlobalSummaryStats() {
                             }}
                             data={{
                                 names: {
-                                    data1: "Users online",
+                                    data1: "Delegated ANT",
                                 },
-                                columns: [["data1", 30, 40, 10, 40, 12, 22, 40]],
+                                columns: [["data1", 0, 0, 0, 0, 8657000, 12657000, 20657000]],
                                 type: "area",
                             }}
                             legend={{

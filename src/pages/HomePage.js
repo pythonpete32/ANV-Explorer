@@ -3,7 +3,7 @@ import React from "react";
 import { Page, Grid, Alert } from "tabler-react";
 
 import SiteWrapper from "../components/SiteWrapper";
-import GlobalSummaryStats from "../components/GlobalSummaryStats";
+import GlobalSummaryStats from "../components/GlobalSummaryStats/GlobalSummaryStats";
 import GlobalAgpChart from "../components/GlobalAgpChart";
 import QuorumGaugeCard from "../components/QuorumGaugeCard";
 import UniqueVoters from "../components/UniqueVoters";
